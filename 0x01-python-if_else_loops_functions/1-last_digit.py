@@ -2,9 +2,9 @@
 import random
 number = random.randint(-10000, 10000)
 
-#strip the random number to get to the last digit and print it
+# strip the random number to get to the last digit and print it
 last_digit = number % 10
-print("{} ".format(last_digit), end="")
+print("Last digit of {} is {} ".format(number, last_digit), end="")
 
 # if the last digit is greater than 5
 if last_digit > 5:
