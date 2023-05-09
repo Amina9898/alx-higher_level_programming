@@ -1,0 +1,3 @@
+#!/bin/bash
+OUTPUT_FILE = "$PYFILEc"
+pyinstaller --onefile --name $OUTPUT_FILE $PYFILE
