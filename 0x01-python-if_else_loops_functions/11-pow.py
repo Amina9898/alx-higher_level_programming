@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 def pow(a, b):
     res = 1
     for i in range(b):
