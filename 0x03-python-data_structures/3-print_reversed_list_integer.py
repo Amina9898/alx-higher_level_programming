@@ -2,7 +2,7 @@
 
 def print_reversed_list_integer(my_list=[]):
 
-    if isinstance(my_list, list):
+    if len(my_list) != 0:
 
         my_list.reverse()
 
