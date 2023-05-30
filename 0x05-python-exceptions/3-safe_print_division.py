@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 def safe_print_division(a, b):
-    result = 0
+    res = 0
     try:
-        result = a / b
+        res = a / b
     except (ZeroDivisionError, TypeError, ValueError, NameError):
-        result = None
+        res = None
+        return None
     finally:
-        print(" Inside result: {}".format(result))
-    return result
+        print(" Inside result: {}".format(res))
