@@ -1,5 +1,9 @@
 #!/usr/bin/python3
-    """This class defines a square"""
+'''This class represents a class object.'''
+
+
 class Square:
-    """This class represents a squre"""
+    '''
+    Represents a square.
+    '''
     pass
