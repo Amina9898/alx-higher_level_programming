@@ -8,7 +8,7 @@ class Rectangle:
 
     print_symbol = "#"
 
-    def __init__(self, width=0, height=0, print_symbol="#"):
+    def __init__(self, width=0, height=0):
         """
         Initializes a new Rectangle.
 
@@ -20,7 +20,6 @@ class Rectangle:
         self.__width = width
         self.__height = height
         Rectangle.number_of_instances += 1
-        self.print_symbol = str(self.print_symbol)
 
     @property
     def width(self):
@@ -82,6 +81,7 @@ class Rectangle:
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
+    @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """
         Static method that returns the biggest rectangle based on the area.
@@ -94,13 +94,10 @@ class Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not isinstance(rect_2, Rectangle):
             raise TypeError("rect_2 must be an instance of Rectangle")
-        if Rectangle.area(rect_1) == Rectangle.area(rect_2):
-            return (rect_1)
-        if Rectangle.area(rect_1) > Rectangle.area(rect_2):
-            biggest = rect_1
-        if Rectangle.area(rect_2) > Rectangle.area(rect_1):
-            biggest = rect_2
-        return biggest
+        if Rectangle.area(rect_1) >= Rectangle.area(rect_2):
+            return rect_1
+        else:
+            return rect_2
 
     @classmethod
     def square(cls, size=0):
