@@ -102,6 +102,7 @@ class Rectangle:
             biggest = rect_2
         return biggest
 
+    @classmethod
     def square(cls, size=0):
         """
         Class method that returns a new Rectangle instance
