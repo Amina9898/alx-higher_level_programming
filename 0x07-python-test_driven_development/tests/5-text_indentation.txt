@@ -1,0 +1,61 @@
+"""This module is for testing the text_indentation() function"""
+
+>>> indent = __import__ ('5-text_indentation').text_indentation
+
+>>> indent("What a lovely day! Do you want sausage?")
+What a lovely day! Do you want sausage?
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+>>> indent(1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 4, in text_indentation
+TypeError: text must be a string
+
+>>> indent("I wanted to be the best all along! You will have to be the second best")
+I wanted to be the best all along! You will have to be the second best
+
+>>> indent()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+>>> indent("...???:::")
+.
+<BLANKLINE>
+<BLANKLINE>
+.
+<BLANKLINE>
+<BLANKLINE>
+.
+<BLANKLINE>
+<BLANKLINE>
+?
+<BLANKLINE>
+<BLANKLINE>
+?
+<BLANKLINE>
+<BLANKLINE>
+?
+<BLANKLINE>
+<BLANKLINE>
+:
+<BLANKLINE>
+<BLANKLINE>
+:
+<BLANKLINE>
+<BLANKLINE>
+:
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
+>>> m = "YESSS! You did it. Want to go again?"
+>>> indent(m)
+YESSS! You did it.
+<BLANKLINE>
+<BLANKLINE>
+Want to go again?
+<BLANKLINE>
+<BLANKLINE>
+<BLANKLINE>
