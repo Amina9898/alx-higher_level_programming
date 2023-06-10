@@ -59,3 +59,12 @@ Want to go again?
 <BLANKLINE>
 <BLANKLINE>
 <BLANKLINE>
+
+>>> indent("Holberton School")
+Holberton School
+
+>>> indent ("Holberton.School")
+Holberton.
+<BLANKLINE>
+<BLANKLINE>
+School
