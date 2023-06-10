@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This moduke defines a function"""
+"""This module defines a function"""
 
 
 def add_integer(a, b=98):
