@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-""" Module that represents a Rectangle. """
+""" Module that represents a square. """
 
 
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+Rectangle = __import__('9-rectangle').Rectangle
 
 
-class Square(BaseGeometry):
+class Square(Rectangle):
     """ Square class: a subclass of the BaseGeometry class"""
     def __init__(self, size):
         """Instantiation with size"""
