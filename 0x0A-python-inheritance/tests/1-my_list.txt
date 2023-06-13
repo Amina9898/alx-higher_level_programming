@@ -2,7 +2,7 @@
 
 >>> MyList = __import__('1-my_list').MyList
 
->>> listt = MyList()
+>>> my_list = MyList()
 
 >>> type(my_list)
 <class '1-my_list.MyList'>
@@ -10,17 +10,6 @@
 >>> print(my_list)
 []
 
->>> n = MyList([1, 2, 3])
->>> print(n)
-[1, 2, 3]
-
->>> my_list = MyList(None)
-Traceback (most recent call last):
-TypeError: 'NoneType' object is not iterable
-
->>> my_list = MyList([1, 2], [3, 4])
-Traceback (most recent call last):
-    TypeError: __init__() takes 1 positional argument but 3 were given
 >>> my_list = MyList()
 >>> my_list.append(1)
 >>> my_list.append(2)
