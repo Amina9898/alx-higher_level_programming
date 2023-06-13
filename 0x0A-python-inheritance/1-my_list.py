@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """This module defines the print_sorted() function"""
 
+
 class MyList(list):
     """Defines MyList class that inherits from list class"""
     def __init__(self):
@@ -14,4 +15,3 @@ class MyList(list):
         """
         listt = sorted(self)
         print(listt)
-
