@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Module defines a is_same_class functiom"""
 
+
 def is_same_class(obj, a_class):
     """
     function that returns True
@@ -9,5 +10,5 @@ def is_same_class(obj, a_class):
     """
     if isinstance(obj, a_class):
         return True
-    if not isinstance(obj, a_class):
+    else:
         return False
