@@ -15,4 +15,3 @@ class MyInt(int):
         if not value:
             return False
         return True
-
