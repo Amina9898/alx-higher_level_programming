@@ -20,7 +20,7 @@ args[0] = "7-add_item.py"
 cmd_args = args[1:]
 
 with open("add_item.json", 'w', encoding="utf-8")as f:
-    f.write(cmd_args)
+    f.write(json.dumps(cmd_args))
 
 new_args = load_from_json_file("add_item.json")
 
