@@ -131,7 +131,10 @@ class Rectangle(Base):
         }
 
     def __str__(self):
-        """overriding the __str__ method to print a representation of the rectangle"""
+        """
+        overriding the __str__ method to print
+        a representation of the rectangle"""
+        """
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
                                                        self.x, self.y,
                                                        self.width, self.height)
