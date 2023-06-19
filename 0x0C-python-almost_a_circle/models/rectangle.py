@@ -2,7 +2,7 @@
 """Defines the rectangle class"""
 
 
-from  models.base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
