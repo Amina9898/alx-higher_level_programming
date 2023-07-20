@@ -1,5 +1,5 @@
 -- script that lists all shows from hbtn_0d_tvshows_rate by their rating
-SELECT titlem (rate) AS rating
+SELECT title, SUM(rate) AS rating
 FROM tv_shows
 INNER JOIN tv_show_ratings AS rat
 ON tv_shows.id = rat.show_id
