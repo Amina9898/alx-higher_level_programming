@@ -8,4 +8,6 @@ if (!(isNaN(g))) {
     }
     console.log(line);
   }
+} else {
+  console.log('Mising size');
 }
