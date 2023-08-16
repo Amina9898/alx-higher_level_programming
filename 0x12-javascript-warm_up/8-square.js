@@ -9,5 +9,5 @@ if (!(isNaN(g))) {
     console.log(line);
   }
 } else {
-  console.log('Mising size');
+  console.log('Missing size');
 }
