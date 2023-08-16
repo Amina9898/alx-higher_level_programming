@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-function findSecondBiggest(arr) {
+function findSecondBiggest (arr) {
   if (arr.length <= 1) {
     return 0;
   }
@@ -24,4 +24,3 @@ function findSecondBiggest(arr) {
 const args = process.argv.slice(2);
 const result = findSecondBiggest(args);
 console.log(result);
-
