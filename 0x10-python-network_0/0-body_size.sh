@@ -1,4 +1,5 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
+#script that prints the size of the body of the response to a URL request
 
 if [ $# -ne 1 ]; then
     exit 1
