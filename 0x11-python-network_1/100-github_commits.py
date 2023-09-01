@@ -7,15 +7,19 @@ import requests
 
 
 if __name__ == "__main__":
-    url = "https://api.github.com/repos/{}/{}/commits".format(
-        sys.argv[2], sys.argv[1])
+    if len(sys.argv) != 3:
+        sys.exit(1)
 
-    requestt = requests.get(url)
-    commits = r.json()
-    try:
-        for i in range(10):
-            print("{}: {}".format(
-                commits[i].get("sha"),
-                commits[i].get("commit").get("author").get("name")))
-    except IndexError:
-        pass
+    repo_name = sys.argv[1]
+    owner_name = sys.argv[2]
+
+    URL = "https://api.github.com/repos/{}/{}/commits".format(
+        owner_name, repo_name)
+
+    response = requests.get(URL)
+    commits = response.json()
+
+    for i in commits[:10]:
+        sha = i['sha']
+        author_name = i['commit']['author']['name']
+        print(f"{sha}: {author_name}")
