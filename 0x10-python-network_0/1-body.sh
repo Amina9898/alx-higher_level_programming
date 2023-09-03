@@ -1,7 +1,9 @@
-#!/usr/bin/bash
+#!/bin/bash
 # A script that sends a request to URL and return body of response
+
 if [ $# -ne 1 ]; then
     exit 1
+fi
 
 URL="$1"
 
