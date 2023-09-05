@@ -6,7 +6,8 @@ the response (decoded in utf-8)
 """
 
 import sys
-import urllib.request
+import urllib.request 
+import urllib.parse
 
 URL = sys.argv[1]
 email = sys.argv[2]
