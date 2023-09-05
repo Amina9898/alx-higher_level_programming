@@ -15,5 +15,5 @@ request = urllib.request.Request(URL)
 try:
     with urllib.request.urllibopen(request) as response:
         print(response.read().decode("ascii"))
-    except urllin.error.HTTPError as e:
+    except urllib.error.HTTPError as e:
         print("Error code: {}".format(e.code))
