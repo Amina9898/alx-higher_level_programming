@@ -10,10 +10,11 @@ import urllib.request
 import urllib.parse
 
 URL = sys.argv[1]
-email = sys.argv[2]
+email = {"email": sys.argv[2]}
 
-data = urllib.parse.urlencode({'email': email}).encode('utf-8')
+data = urllib.parse.urlencode(email).encode("ascii")
 
-with urllib.request.urlopen(URL, data=data) as response:
+request = urllib.request.Request(URL, data)
+with urllib.request.urlopen(request) as response:
     output = response.read().decode('utf-8')
     print(output)
