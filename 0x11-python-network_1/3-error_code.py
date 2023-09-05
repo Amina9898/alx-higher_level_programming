@@ -14,6 +14,6 @@ request = urllib.request.Request(URL)
 
 try:
     with urllib.request.urllibopen(request) as response:
-        print(response.read().decode("ascii"))
+        print(response.read().decode("utf-8"))
     except urllib.error.HTTPError as e:
         print("Error code: {}".format(e.code))
